@@ -105,6 +105,16 @@ namespace CalculadoraElbicho
             {
                 txtresultado.Text = Convert.ToString(Numero1 + Numero2);
 
+
+            }
+            else if (operador == '-')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 - Numero2);
+            }
+            else if (operador == '*')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 * Numero2);
+            
             }
 
 
@@ -122,6 +132,35 @@ namespace CalculadoraElbicho
             txtresultado.Text = "";
             operador = '+';
 
+
+        }
+
+        private void Menos_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '-';
+        }
+
+        private void ValorAbsoluti_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+
+            if (Numero1 < -1)
+            {
+                txtresultado.Text = Convert.ToString(Numero1 * (-1));
+            }
+        }
+
+        private void Multiplicacion_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '*';
+        }
+
+        private void dividir_Click(object sender, EventArgs e)
+        {
 
         }
     }
