@@ -65,7 +65,7 @@
             txtresultado.TabIndex = 0;
             txtresultado.Text = "0";
             txtresultado.TextAlign = HorizontalAlignment.Right;
-            txtresultado.TextChanged += txtresultado_TextChanged;
+            
             // 
             // Uno
             // 
@@ -219,6 +219,7 @@
             RaizCuadrada.Tag = "√";
             RaizCuadrada.Text = "√";
             RaizCuadrada.UseVisualStyleBackColor = true;
+            RaizCuadrada.Click += RaizCuadrada_Click;
             // 
             // pocentaje
             // 
@@ -240,6 +241,7 @@
             ValorAbsoluti.TabIndex = 20;
             ValorAbsoluti.Text = "| |";
             ValorAbsoluti.UseVisualStyleBackColor = true;
+            ValorAbsoluti.Click += ValorAbsoluti_Click;
             // 
             // dividir
             // 
@@ -251,6 +253,7 @@
             dividir.Tag = "/";
             dividir.Text = "/";
             dividir.UseVisualStyleBackColor = true;
+            dividir.Click += dividir_Click;
             // 
             // Multiplicacion
             // 
@@ -262,6 +265,7 @@
             Multiplicacion.Tag = "*";
             Multiplicacion.Text = "*";
             Multiplicacion.UseVisualStyleBackColor = true;
+            Multiplicacion.Click += Multiplicacion_Click;
             // 
             // Menos
             // 
@@ -273,6 +277,7 @@
             Menos.Tag = "-";
             Menos.Text = "-";
             Menos.UseVisualStyleBackColor = true;
+            Menos.Click += Menos_Click;
             // 
             // Mas
             // 

@@ -105,6 +105,16 @@ namespace CalculadoraElbicho
             {
                 txtresultado.Text = Convert.ToString(Numero1 + Numero2);
 
+
+            }
+            else if (operador == '-')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 - Numero2);
+            }
+            else if (operador == '*')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 * Numero2);
+            
             }
             else if (operador == '^')
             {
@@ -114,7 +124,10 @@ namespace CalculadoraElbicho
             {
                 txtresultado.Text = Convert.ToString((Numero1 * Numero2) / 100);
             }
-
+            else if (operador == '/')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 / Numero2);
+            }
 
 
         }
@@ -133,6 +146,24 @@ namespace CalculadoraElbicho
 
         }
 
+        private void dividir_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '/';
+        }
+
+        private void RaizCuadrada_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = Convert.ToString(Math.Sqrt(Numero1));
+        }
+        private void Menos_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '-';
+        }
         private void Potencia_Click(object sender, EventArgs e)
         {
             Numero1 = Convert.ToDouble(txtresultado.Text);
@@ -142,13 +173,22 @@ namespace CalculadoraElbicho
 
         private void ValorAbsoluti_Click(object sender, EventArgs e)
         {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
 
+            if (Numero1 < -1)
+            {
+                txtresultado.Text = Convert.ToString(Numero1 * (-1));
+            }
         }
 
-        private void txtresultado_TextChanged(object sender, EventArgs e)
+        private void Multiplicacion_Click(object sender, EventArgs e)
         {
-
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '*';
         }
+
+        
 
         private void pocentaje_Click(object sender, EventArgs e)
         {
