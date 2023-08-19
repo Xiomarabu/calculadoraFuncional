@@ -203,7 +203,7 @@
             Potencia.Size = new Size(45, 45);
             Potencia.TabIndex = 15;
             Potencia.Tag = "²";
-            Potencia.Text = "X²";
+            Potencia.Text = "^";
             Potencia.UseVisualStyleBackColor = true;
             Potencia.Click += Potencia_Click;
             // 
