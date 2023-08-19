@@ -49,9 +49,7 @@
             Menos = new Button();
             Mas = new Button();
             Igual = new Button();
-            Punto = new Button();
             Cero = new Button();
-            coma = new Button();
             SuspendLayout();
             // 
             // txtresultado
@@ -297,39 +295,17 @@
             Igual.UseVisualStyleBackColor = true;
             Igual.Click += clickOperador;
             // 
-            // Punto
-            // 
-            Punto.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Punto.Location = new Point(114, 375);
-            Punto.Name = "Punto";
-            Punto.Size = new Size(45, 45);
-            Punto.TabIndex = 23;
-            Punto.Text = ".";
-            Punto.UseVisualStyleBackColor = true;
-            Punto.Click += Punto_Click;
-            // 
             // Cero
             // 
             Cero.BackColor = SystemColors.GradientInactiveCaption;
             Cero.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Cero.Location = new Point(63, 375);
+            Cero.Location = new Point(12, 375);
             Cero.Name = "Cero";
-            Cero.Size = new Size(45, 45);
+            Cero.Size = new Size(147, 45);
             Cero.TabIndex = 22;
             Cero.Text = "0";
             Cero.UseVisualStyleBackColor = false;
             Cero.Click += Cero_Click;
-            // 
-            // coma
-            // 
-            coma.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            coma.Location = new Point(12, 375);
-            coma.Name = "coma";
-            coma.Size = new Size(45, 45);
-            coma.TabIndex = 21;
-            coma.Text = ",";
-            coma.UseVisualStyleBackColor = true;
-            coma.Click += coma_Click;
             // 
             // Form1
             // 
@@ -337,9 +313,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(221, 450);
             Controls.Add(Igual);
-            Controls.Add(Punto);
             Controls.Add(Cero);
-            Controls.Add(coma);
             Controls.Add(ValorAbsoluti);
             Controls.Add(dividir);
             Controls.Add(Multiplicacion);
