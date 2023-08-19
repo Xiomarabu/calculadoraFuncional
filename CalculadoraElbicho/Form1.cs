@@ -105,6 +105,23 @@ namespace CalculadoraElbicho
             {
                 txtresultado.Text = Convert.ToString(Numero1 + Numero2);
 
+
+            }
+            else if (operador == '-')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 - Numero2);
+            }
+            else if (operador == '*')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 * Numero2);
+            
+            }
+            else if (operador == '^')
+            {
+                txtresultado.Text = Convert.ToString(Math.Pow(Numero1, Numero2));
+            }else if (operador == '%')
+            {
+                txtresultado.Text = Convert.ToString((Numero1 * Numero2) / 100);
             }
             else if (operador == '/')
             {
@@ -139,6 +156,51 @@ namespace CalculadoraElbicho
         {
             Numero1 = Convert.ToDouble(txtresultado.Text);
             txtresultado.Text = Convert.ToString(Math.Sqrt(Numero1));
+        private void Menos_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '-';
+        private void Potencia_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '^';
+        }
+
+        private void ValorAbsoluti_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+
+            if (Numero1 < -1)
+            {
+                txtresultado.Text = Convert.ToString(Numero1 * (-1));
+            }
+        }
+
+        private void Multiplicacion_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '*';
+        }
+
+        private void dividir_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void txtresultado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pocentaje_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert .ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '%';
         }
     }
 
