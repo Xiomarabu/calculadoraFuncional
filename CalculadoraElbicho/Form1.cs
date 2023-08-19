@@ -105,6 +105,9 @@ namespace CalculadoraElbicho
             {
                 txtresultado.Text = Convert.ToString(Numero1 + Numero2);
 
+            }else if (operador == '^')
+            {
+                txtresultado.Text = Convert.ToString(Math.Pow(Numero1, Numero2));
             }
 
 
@@ -123,6 +126,13 @@ namespace CalculadoraElbicho
             operador = '+';
 
 
+        }
+
+        private void Potencia_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert .ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '^';
         }
     }
 

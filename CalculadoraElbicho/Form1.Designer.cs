@@ -215,6 +215,7 @@
             Potencia.Tag = "²";
             Potencia.Text = "X²";
             Potencia.UseVisualStyleBackColor = true;
+            Potencia.Click += Potencia_Click;
             // 
             // RaizCuadrada
             // 
