@@ -109,7 +109,8 @@ namespace CalculadoraElbicho
             else if (operador == '^')
             {
                 txtresultado.Text = Convert.ToString(Math.Pow(Numero1, Numero2));
-            }else if (operador == '%')
+            }
+            else if (operador == '%')
             {
                 txtresultado.Text = Convert.ToString((Numero1 * Numero2) / 100);
             }
@@ -151,9 +152,30 @@ namespace CalculadoraElbicho
 
         private void pocentaje_Click(object sender, EventArgs e)
         {
-            Numero1 = Convert .ToDouble(txtresultado.Text);
+            Numero1 = Convert.ToDouble(txtresultado.Text);
             txtresultado.Text = "";
             operador = '%';
+        }
+
+        private void CE_Click(object sender, EventArgs e)
+        {
+            Numero1 = 0;
+            Numero2 = 0;
+            operador = '\0';
+            txtresultado.Text = "0";
+        }
+
+
+        private void Borrar_Click(object sender, EventArgs e)
+        {
+            if (txtresultado.Text.Length > 1)
+            {
+                txtresultado.Text = txtresultado.Text.Substring(0, txtresultado.Text.Length - 1);
+            }
+            else
+            {
+                txtresultado.Text = "0";
+            }
         }
     }
 

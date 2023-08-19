@@ -36,7 +36,6 @@
             Cinco = new Button();
             Cuatro = new Button();
             Borrar = new Button();
-            C = new Button();
             CE = new Button();
             Nueve = new Button();
             Ocho = new Button();
@@ -143,22 +142,13 @@
             // Borrar
             // 
             Borrar.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Borrar.Location = new Point(114, 156);
+            Borrar.Location = new Point(63, 156);
             Borrar.Name = "Borrar";
-            Borrar.Size = new Size(45, 45);
+            Borrar.Size = new Size(96, 45);
             Borrar.TabIndex = 12;
             Borrar.Text = "<-";
             Borrar.UseVisualStyleBackColor = true;
-            // 
-            // C
-            // 
-            C.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            C.Location = new Point(63, 156);
-            C.Name = "C";
-            C.Size = new Size(45, 45);
-            C.TabIndex = 11;
-            C.Text = "C";
-            C.UseVisualStyleBackColor = true;
+            Borrar.Click += Borrar_Click;
             // 
             // CE
             // 
@@ -169,6 +159,7 @@
             CE.TabIndex = 10;
             CE.Text = "CE";
             CE.UseVisualStyleBackColor = true;
+            CE.Click += CE_Click;
             // 
             // Nueve
             // 
@@ -358,7 +349,6 @@
             Controls.Add(RaizCuadrada);
             Controls.Add(pocentaje);
             Controls.Add(Borrar);
-            Controls.Add(C);
             Controls.Add(CE);
             Controls.Add(Nueve);
             Controls.Add(Ocho);
@@ -386,7 +376,6 @@
         private Button Cinco;
         private Button Cuatro;
         private Button Borrar;
-        private Button C;
         private Button CE;
         private Button Nueve;
         private Button Ocho;
