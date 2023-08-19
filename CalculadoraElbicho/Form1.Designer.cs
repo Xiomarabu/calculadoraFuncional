@@ -226,6 +226,7 @@
             RaizCuadrada.Tag = "√";
             RaizCuadrada.Text = "√";
             RaizCuadrada.UseVisualStyleBackColor = true;
+            RaizCuadrada.Click += RaizCuadrada_Click;
             // 
             // pocentaje
             // 
@@ -257,6 +258,7 @@
             dividir.Tag = "/";
             dividir.Text = "/";
             dividir.UseVisualStyleBackColor = true;
+            dividir.Click += dividir_Click;
             // 
             // Multiplicacion
             // 

@@ -106,7 +106,10 @@ namespace CalculadoraElbicho
                 txtresultado.Text = Convert.ToString(Numero1 + Numero2);
 
             }
-
+            else if (operador == '/')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 / Numero2);
+            }
 
 
         }
@@ -123,6 +126,19 @@ namespace CalculadoraElbicho
             operador = '+';
 
 
+        }
+
+        private void dividir_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '/';
+        }
+
+        private void RaizCuadrada_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = Convert.ToString(Math.Sqrt(Numero1));
         }
     }
 
