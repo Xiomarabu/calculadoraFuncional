@@ -66,7 +66,7 @@
             txtresultado.TabIndex = 0;
             txtresultado.Text = "0";
             txtresultado.TextAlign = HorizontalAlignment.Right;
-            txtresultado.TextChanged += txtresultado_TextChanged;
+            
             // 
             // Uno
             // 

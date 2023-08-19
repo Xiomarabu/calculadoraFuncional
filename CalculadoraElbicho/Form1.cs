@@ -156,11 +156,13 @@ namespace CalculadoraElbicho
         {
             Numero1 = Convert.ToDouble(txtresultado.Text);
             txtresultado.Text = Convert.ToString(Math.Sqrt(Numero1));
+        }
         private void Menos_Click(object sender, EventArgs e)
         {
             Numero1 = Convert.ToDouble(txtresultado.Text);
             txtresultado.Text = "";
             operador = '-';
+        }
         private void Potencia_Click(object sender, EventArgs e)
         {
             Numero1 = Convert.ToDouble(txtresultado.Text);
@@ -185,16 +187,7 @@ namespace CalculadoraElbicho
             operador = '*';
         }
 
-        private void dividir_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void txtresultado_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void pocentaje_Click(object sender, EventArgs e)
         {
