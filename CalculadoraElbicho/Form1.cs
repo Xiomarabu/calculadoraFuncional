@@ -1,7 +1,13 @@
 namespace CalculadoraElbicho
 {
     public partial class Form1 : Form
+
     {
+        double Numero1 = 0, Numero2 = 0;
+        char operador;
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -90,6 +96,33 @@ namespace CalculadoraElbicho
         private void Cero_Click(object sender, EventArgs e)
         {
             agregarNumero("0");
+        }
+
+        private void clickOperador(object sender, EventArgs e)
+        {
+            Numero2 = Convert.ToDouble(txtresultado.Text);
+            if (operador == '+')
+            {
+                txtresultado.Text = Convert.ToString(Numero1 + Numero2);
+
+            }
+
+
+
+        }
+
+        private void Mas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mas_Click_1(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtresultado.Text);
+            txtresultado.Text = "";
+            operador = '+';
+
+
         }
     }
 

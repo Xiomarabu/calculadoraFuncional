@@ -59,6 +59,7 @@
             // 
             txtresultado.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             txtresultado.Location = new Point(0, 0);
+            txtresultado.MaxLength = 15;
             txtresultado.Multiline = true;
             txtresultado.Name = "txtresultado";
             txtresultado.Size = new Size(210, 50);
@@ -211,6 +212,7 @@
             Potencia.Name = "Potencia";
             Potencia.Size = new Size(45, 45);
             Potencia.TabIndex = 15;
+            Potencia.Tag = "²";
             Potencia.Text = "X²";
             Potencia.UseVisualStyleBackColor = true;
             // 
@@ -221,9 +223,9 @@
             RaizCuadrada.Name = "RaizCuadrada";
             RaizCuadrada.Size = new Size(45, 45);
             RaizCuadrada.TabIndex = 14;
+            RaizCuadrada.Tag = "√";
             RaizCuadrada.Text = "√";
             RaizCuadrada.UseVisualStyleBackColor = true;
-            RaizCuadrada.Click += button14_Click;
             // 
             // pocentaje
             // 
@@ -244,7 +246,6 @@
             ValorAbsoluti.TabIndex = 20;
             ValorAbsoluti.Text = "| |";
             ValorAbsoluti.UseVisualStyleBackColor = true;
-            ValorAbsoluti.Click += button16_Click;
             // 
             // dividir
             // 
@@ -253,6 +254,7 @@
             dividir.Name = "dividir";
             dividir.Size = new Size(45, 45);
             dividir.TabIndex = 19;
+            dividir.Tag = "/";
             dividir.Text = "/";
             dividir.UseVisualStyleBackColor = true;
             // 
@@ -263,9 +265,9 @@
             Multiplicacion.Name = "Multiplicacion";
             Multiplicacion.Size = new Size(45, 45);
             Multiplicacion.TabIndex = 18;
+            Multiplicacion.Tag = "*";
             Multiplicacion.Text = "*";
             Multiplicacion.UseVisualStyleBackColor = true;
-            Multiplicacion.Click += button18_Click;
             // 
             // Menos
             // 
@@ -274,6 +276,7 @@
             Menos.Name = "Menos";
             Menos.Size = new Size(45, 45);
             Menos.TabIndex = 17;
+            Menos.Tag = "-";
             Menos.Text = "-";
             Menos.UseVisualStyleBackColor = true;
             // 
@@ -284,8 +287,10 @@
             Mas.Name = "Mas";
             Mas.Size = new Size(45, 45);
             Mas.TabIndex = 16;
+            Mas.Tag = "+";
             Mas.Text = "+";
             Mas.UseVisualStyleBackColor = true;
+            Mas.Click += Mas_Click_1;
             // 
             // Igual
             // 
@@ -296,6 +301,7 @@
             Igual.TabIndex = 24;
             Igual.Text = "=";
             Igual.UseVisualStyleBackColor = true;
+            Igual.Click += clickOperador;
             // 
             // Punto
             // 
