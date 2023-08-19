@@ -66,6 +66,7 @@
             txtresultado.TabIndex = 0;
             txtresultado.Text = "0";
             txtresultado.TextAlign = HorizontalAlignment.Right;
+            txtresultado.TextChanged += txtresultado_TextChanged;
             // 
             // Uno
             // 
@@ -215,6 +216,7 @@
             Potencia.Tag = "²";
             Potencia.Text = "X²";
             Potencia.UseVisualStyleBackColor = true;
+            Potencia.Click += Potencia_Click;
             // 
             // RaizCuadrada
             // 
@@ -236,6 +238,7 @@
             pocentaje.TabIndex = 13;
             pocentaje.Text = "%";
             pocentaje.UseVisualStyleBackColor = true;
+            pocentaje.Click += pocentaje_Click;
             // 
             // ValorAbsoluti
             // 
